@@ -1,0 +1,696 @@
+@charset "utf-8";
+/* Global Styles */
+/* a:hover {
+	color: rgba(255,255,255,1.00);
+} */
+/*header*/
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+
+.dropdown-content , .dropdown-content-hide {
+    position: absolute;
+    float:right;
+    background-color: #f9f9f9;
+    right:0;
+    min-width: 360px;
+    min-height: 160px;
+    max-width: 360px;
+    max-height: 260px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index:20;
+}
+
+.dropdown-content-hide {
+	display: none;
+}
+
+.dropdown-content-hide a, .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.menu a:active {color: white;}
+.menu a {color: white;}
+.menu a:visited {color: white;}
+.menu a:hover {color: black}
+
+.menu tr:HOVER {
+	background-color: #f1f1f1;
+}
+
+.show {display:block;}
+
+
+
+
+.fullCart {
+	display:none;
+}
+
+.emptyCart
+{
+	display:block;
+}
+
+
+
+header {
+	font-family: 'Montserrat', sans-serif;
+	color: rgba(146,146,146,1.00);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+}
+/* Logo placeholder*/
+#logo {
+	float: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 139px;
+	text-align: center;
+	color: rgba(255,255,255,1.00);
+	background-color: rgba(190,190,190,1.00);
+}
+/* div for Links in header */
+#headerLinks {
+	float: right;
+	width: calc( 100% - 139px );
+	text-align: right;
+	padding-top: 0px;
+	padding-bottom: 10px;
+	background-color: rgba(255,255,255,1.00);
+}
+/* Links in header */
+#headerLinks a {
+	text-decoration: none;
+	color: rgba(146,146,146,1.00);
+	padding-left: 66px;
+	font-size: 14px;
+}
+/* Offer text banner*/
+#offer {
+	font-family: 'Montserrat', sans-serif;
+	clear: both;
+	background-color: #CF1316;
+	color: #FFFFFF;
+}
+/* Main content of the site */
+#content {
+	clear: both;
+	overflow: auto;
+}
+/* Sidebar */
+#content .sidebar {
+	font-family: 'Montserrat', sans-serif;
+	color: rgba(146,146,146,1.00);
+	float: left;
+	width: 20%;
+	text-align: center;
+	background-color: #000000;
+	padding-top: 36px;
+	height: 784px;
+}
+/* main content of the site */
+#content .mainContent {
+	float: left;
+	width: 70%;
+	text-align: center;
+	padding-left: 2%;
+}
+/*menubar's properties for menus in sidebar */
+#content .sidebar #menubar {
+	text-align: center;
+	color: rgba(146,146,146,1.00);
+	position: relative;
+	vertical-align: middle;
+	align-content: center;
+}
+/* Search field in sidebar */
+#search {
+	color: rgba(208,207,207,1.00);
+	font-size: 14px;
+	float: right;
+	width: 180pt;
+	vertical-align: middle;
+	margin: 4px;
+	
+}
+/* Whole page content */
+#mainWrapper {
+	width: 80%;
+	padding-left: 10%;
+}
+/*menu elements */
+.menu ul li {
+	list-style-type: none;
+	font-size: x-large;
+	position: relative;
+	padding-left: -110pt;
+	
+}
+/* Product rows for catalog */
+#content .mainContent .productRow {
+	overflow: auto;
+	color: rgba(146,146,146,1.00);
+}
+
+.mainContent , .mainWrapper , .body_section
+{
+	z-index: 1;
+}
+
+/* Each product Information in the catalog */
+.mainContent .productRow .productInfo {
+	float: left;
+	padding-left: 5%;
+	padding-right: 5%;
+	width: 22%;
+	border: thin;
+}
+/* Prices of a products in catalog */
+.productRow .productInfo .price {
+	font-family: 'Montserrat', sans-serif;
+	color: rgba(146,146,146,1.00);
+	font-size: 14px;
+	position: relative;
+	top: -10px;
+}
+/* Content holder for products in catalog*/
+.productRow .productInfo .productContent {
+	position: relative;
+	font-size: 18px;
+	font-family: source-sans-pro, sans-serif;
+	font-style: normal;
+	font-weight: 200;
+	color: rgba(146,146,146,1.00);
+}
+/* Buy button for products in catalog */
+.productRow .productInfo .addButton {
+	position: relative;
+	top: -30px;
+	width: 84%;
+	background-color: #EB0003;
+	height: 35px;
+	color: rgba(255,255,255,1.00);
+	border-style: none;
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-top: 8px;
+	box-shadow: 2px 2px 2px #888888;
+}
+
+.productRow .productInfo .removeButton {
+	position: relative;
+	top: -30px;
+	width: 84%;
+	background-color: grey;
+	height: 35px;
+	color: rgba(255,255,255,1.00);
+	border-style: none;
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-top: 8px;
+	box-shadow: 2px 2px 2px #888888;
+}
+
+.productRow .productInfo .subscribeButton {
+	position: relative;
+	top: -30px;
+	width: 84%;
+	background-color: #0080ff;
+	height: 35px;
+	color: rgba(255,255,255,1.00);
+	border-style: none;
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-top: 8px;
+	box-shadow: 2px 2px 2px #888888;
+}
+
+.productRow .productInfo .unsubscribeButton {
+	position: relative;
+	top: -48px;
+	width: 84%;
+	background-color: #feb86b;
+	height: 35px;
+	color: rgba(255,255,255,1.00);
+	border-style: none;
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-top: 8px;
+	box-shadow: 2px 2px 2px #888888;
+}
+
+.productRow .productInfo .downloadButton {
+	position: relative;
+	top: -48px;
+	width: 84%;
+	background-color: #00c800;
+	height: 35px;
+	color: rgba(255,255,255,1.00);
+	border-style: none;
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-top: 8px;
+	box-shadow: 2px 2px 2px #888888;
+}
+
+navButton {
+	position: relative;
+	width: 50%;
+	background-color: green;
+	height: 35px;
+	color: rgba(255,255,255,1.00);
+	border-style: none;
+	font-size: 14px;
+    margin-top: 8px;
+	box-shadow: 2px 2px 2px #888888;
+}
+
+
+/* footer */
+#mainWrapper footer {
+	clear: both;
+	overflow: auto;
+	background-color: rgba(208,207,207,1.00);
+	font-family: source-sans-pro, sans-serif;
+	font-style: normal;
+	font-weight: 200;
+	line-height: 1.8;
+	padding-top: 22px;
+	padding-left: 22px;
+	text-align: center;
+	padding-bottom: 22px;
+	padding-right: 22px;
+}
+/*Each footer content */
+#mainWrapper footer div {
+	width: 27%;
+	float: left;
+	padding-left: 4%;
+	padding-right: 2%;
+	color: rgba(255,255,255,1.00);
+	text-align: justify;
+}
+/* Links in footer */
+footer div a {
+	color: rgba(146,146,146,1.00);
+	display: block;
+	text-decoration: none;
+	text-align: center;
+}
+/* Product's images in catalog */
+.productInfo div img {
+	width: 120pt;
+	height: 120pt;
+	box-shadow: 2px 2px 2px #888888;
+
+}
+/*Links in sidebar 
+.sidebar #menubar .menu ul li a {
+	color: rgba(146,146,146,1.00);
+	text-decoration: none;
+}
+/* .sidebar #menubar .menu ul li a:hover {
+	color: rgba(107,97,97,1.00);
+	text-decoration: none;
+}
+/
+*
+/*Links under menus in sidebar 
+#menubar .menu table tr td a {
+	font-size: 14px;
+	text-decoration: none;
+}
+
+#menubar .menu table tr td a:active {
+	color: white;
+}
+
+#menubar .menu table tr td a:hover {
+	font-size: 15px;
+	font-color: grey;
+	align-items: center;
+	background-color: #4D4646;
+}
+
+#menubar .menu table tr td a:visited {
+	color: white;
+}
+
+*/
+
+
+/* Menu headings in sidebar */
+#menubar .menu h2 {
+	font-size: 14px;
+}
+/*Links under menus in sidebar */
+#menubar .menu table tr td a {
+	font-size: 14px;
+	text-decoration: none;
+}
+
+#menubar .menu table tr td a:active {
+	color: white;
+}
+
+#menubar .menu table tr td a:hover {
+	font-size: 15px;
+	font-color: grey;
+	align-items: center;
+	background-color: #4D4646;
+}
+
+#menubar .menu table tr td a:visited {
+	color: white;
+}
+/* Menus in sidebar */
+.sidebar #menubar .menu {
+	background-color: #232121;
+}
+/* Container for links in footer */
+footer .footerlinks {
+	margin-top: -15px;
+}
+
+/* Media query for tablets */
+@media screen and (max-width:700px) {
+/* search field in sidebar */
+#content .sidebar #search {
+	display: none;
+}
+/* sidebar */
+#content .sidebar {
+	float: none;
+	width: 100%;
+	height: auto;
+	overflow: auto;
+	padding-left: 12%;
+	padding-top: 0px;
+}
+/* horizontal separators in sidebar */
+#content .sidebar hr {
+	display: none;
+}
+/*The sidebar and maincontent of page */
+#content {
+	position: relative;
+	top: -22px;
+	width: 100%;
+	overflow: hidden;
+}
+/*menu headings in sidebar */
+#menubar .menu h2 {
+	display: inline;
+	font-size: medium;
+	padding-right: 6%;
+}
+/* Unordered List of links */
+#menubar .menu ul {
+	display: inline;
+	align-content: center;
+	
+}
+/*list elements */
+#menubar .menu ul li {
+	display: inline;
+	font-size: medium;
+	padding-left: 0%;
+	padding-right: 3%;
+}
+/*The link to be hidden in tablet view */
+.sidebar #menubar .menu ul .notimp {
+	display: none;
+}
+/* menus in sidebar */
+.sidebar #menubar .menu {
+	width: 100%;
+	text-align: center;
+	position: relative;
+	top: 16px;
+}
+/*menubar in sidebar */
+#content .sidebar #menubar {
+	position: relative;
+	left: -7%;
+	overflow: hidden;
+	width: 95%;
+	padding-top: 0px;
+}
+/* offer banners content */
+#mainWrapper #offer p {
+	font-size: small;
+}
+/* main content region of page */
+#mainWrapper #content .mainContent {
+	overflow: hidden;
+	width: 95%;
+	margin-top: 40px;
+}
+/* Buy buttons in catalog view *
+.productRow .productInfo .addButton {
+	font-size: 15px;
+} */
+/* Container for links in footer */
+#mainWrapper footer .footerlinks {
+	float: none;
+	width: 100%;
+	position: relative;
+	top: 17px;
+	clear: both;
+	text-align: center;
+	left: 0%;
+	padding-bottom: 19px;
+}
+/* Container for each footer divisions */
+#mainWrapper footer div {
+	width: 44%;
+	text-align: justify;
+	font-size: 15px;
+}
+/* Links in footer */
+.footerlinks p a {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	display: inline;
+	padding-right: 35px;
+}
+/* Footer region */
+#mainWrapper footer {
+	padding-left: 16px;
+	overflow: hidden;
+}
+/* Links in header */
+header #headerLinks a {
+	font-style: italic;
+	padding-left: 0px;
+	padding-right: 30px;
+}
+/* Offer- Text banner */
+#mainWrapper #offer {
+	padding-left: 22%;
+}
+/* Paragraphs in footer */
+footer .footerlinks p {
+	display: inline;
+}
+}
+
+/*media query for small screen devices */
+@media screen and (max-width:480px) {
+/*Container for links in header */
+#mainWrapper header #headerLinks {
+	width: 100%;
+	text-align: center;
+	background-color: rgba(190,190,190,1.00);
+	padding-bottom: 21px;
+}
+/* Logo placeholder*/
+#mainWrapper header #logo {
+	width: 100%;
+	text-align: center;
+}
+/* Links in header */
+header #headerLinks a {
+	text-align: center;
+	padding-right: 15px;
+	padding-left: 0px;
+}
+/*Offer - Text Banner */
+#mainWrapper #offer {
+	padding-left: 0px;
+	text-align: center;
+}
+/* Menubar in sidebar */
+#content .sidebar #menubar {
+	position: relative;
+	left: -8%;
+	text-align: center;
+}
+/*Menu headings in sidebar */
+#menubar .menu h2 {
+	width: 100%;
+	display: block;
+}
+/* Each product in catalog view */
+.mainContent .productRow .productInfo {
+	width: 100%;
+	display: block;
+	padding-left: 0px;
+	padding-right: 0px;
+	position: relative;
+	left: -2%;
+}
+#mainWrapper footer div {
+	width: 100%;
+	margin-left: -16px;
+	text-align: justify;
+	padding-bottom: 16px;
+	overflow: auto;
+}
+/* Unordered list for menu elements */
+.menu ul {
+	position: relative;
+	padding-left: 24%;
+}
+/* Container for links in footer */
+#mainWrapper footer .footerlinks {
+	padding-left: 8%;
+}
+/* Main content which excludes the sidebar */
+#mainwrapper #content .mainContent {
+	margin-top: -81px;
+	text-align: center;
+	width: 100%;
+	padding-left: 0px;
+}
+}
+
+.menu a {
+	vlink: white;
+	alink: black;
+}
+
+#menubar .menu table tr {
+	letter-spacing: 1pt;
+}
+
+#menubar .menu table tr td {
+	text-align:  center;
+	vertical-align: middle;
+	
+}
+
+#menubar .menu table {
+	background-color: #000000;
+	width: 100%;
+}
+
+
+navigation {
+	float: bottom;
+	width: 70%;
+	text-align: center;
+	padding-left: 4%;
+}
+
+
+.lefttop_logo {
+	float: left;
+	position: absolute; 
+	top: 0pt;
+	left:-340pt;
+	z-index: -1;
+	
+}
+
+
+.checkoutSummary {
+  width:100%;
+  position: relative;
+  background-image: -webkit-linear-gradient(top, rgba(255, 128, 128, 0.25), rgba(255, 230, 230, 0.25));
+  background-image: -moz-linear-gradient(top, rgba(255, 128, 128, 0.25), rgba(255, 230, 230, 0.25));
+  background-image: -o-linear-gradient(top, rgba(255, 128, 128, 0.25), rgba(255, 230, 230, 0.25));
+  background-image: linear-gradient(to bottom, rgba(255, 128, 128, 0.25), rgba(255, 230, 230, 0.25));
+  -webkit-box-shadow: inset 0 1px rgba(0, 0, 0, 0.25), inset 0 2px rgba(255, 255, 255, 0.2), 0 0 2px rgba(0, 0, 0, 0.5);
+	
+}
+
+.checkoutSummary:hover {
+  width:100%;
+  position: relative;
+  background-image: -webkit-linear-gradient(top, rgba(128, 215, 255, 0.25), rgba(255, 230, 230, 0.25));
+  background-image: -moz-linear-gradient(top, rgba(128, 215, 255, 0.25), rgba(255, 230, 230, 0.25));
+  background-image: -o-linear-gradient(top, rgba(128, 215, 255, 0.25), rgba(255, 230, 230, 0.25));
+  background-image: linear-gradient(to bottom, rgba(128, 215, 255, 0.25), rgba(255, 230, 230, 0.25));
+  -webkit-box-shadow: inset 0 1px rgba(0, 0, 0, 0.25), inset 0 2px rgba(255, 255, 255, 0.2), 0 0 2px rgba(0, 0, 0, 0.5);
+	
+}
+
+
+.checkoutSummaryFS {
+  width:70%;
+  height:300pt;
+  overflow: hidden;
+
+}
+
+.checkoutSummary {
+  width:70%;
+  height:300pt;
+  overflow: hidden;
+
+}
+
+
+.icon-remove {
+  width: 15pt;
+  height: 15pt;
+}
+
+.cancel_task {
+  float: right;
+  margin: 0 1px 0 10px;
+  padding: 3px 3px 3px 4px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.3);
+}
+
+.checkoutItem
+{
+  position: relative;
+  width: 100%;
+  height: 40pt;
+}
+
+
+.total_sectionFS {
+	
+	
+	
+
+	}
+	
